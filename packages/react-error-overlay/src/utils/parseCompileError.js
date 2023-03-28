@@ -1,4 +1,3 @@
-// @flow
 import Anser from 'anser';
 
 export type ErrorLocation = {|

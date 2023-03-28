@@ -1,16 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { version } from 'react';
+import styles from './app.module.scss';
 
-function App() {
+const App = () => {
+  console.log(version); // log react version
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className={styles.App}>
+      <header className={styles.AppHeader}>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to <code>Deepintent.com</code>.
         </p>
         <a
-          className="App-link"
+          className={styles.AppLink}
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
@@ -20,6 +21,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
