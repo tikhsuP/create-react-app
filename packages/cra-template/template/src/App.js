@@ -1,6 +1,9 @@
+import React, { version } from 'react';
 import styles from './app.module.scss';
 
 const App = () => {
+  console.log(version); // log react version
+
   return (
     <div className={styles.App}>
       <header className={styles.AppHeader}>
